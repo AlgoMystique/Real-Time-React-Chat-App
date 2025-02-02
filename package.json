@@ -1,13 +1,14 @@
 {
-  "name": "realtime-socketio-chat-app",
+  "name": "real-time-react-chat-app",
   "version": "1.0.0",
   "description": "A realtime chat app built using react, node and socket.io",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",                     
-    "client": "npm start --prefix client",               
-    "client-build": "npm run build --prefix client",     
-    "deploy": "npm run client-build && npm start"      
+    "start": "cd server && npm run start",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "concurrently \"cd server && npm run build\" \"cd client && npm run build\"",
+    "render-build":"npm install && npm run build"
   },
   "dependencies": {
     "express": "^4.17.1",                          
