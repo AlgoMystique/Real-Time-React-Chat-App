@@ -1,4 +1,5 @@
-# Real-Time-React-Chat-App
+# ChatterX
+
 
 A real-time chat application built with Node.js, React.js, and Socket.io. This app allows users to chat instantly across different devices and browsers. In the walkthrough video, using the same device, I have tested it with two users: **User 1 (Sababa)** on Chrome and **User 2 (John)** on Safari. You can also try it using an incognito window to simulate different users.
 
